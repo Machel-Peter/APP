@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>App测试版</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <script type="text/javascript" src="../script/api.js"></script>
+	<style>
+		#con{
+			margin: 10px;
+			font-size: 24px; 
+		}
+		ul{
+			margin-bottom: 10px;
+		}
+		ul li{ 
+			margin: 5px 10px;
+			padding: 5px;
+			color: #000;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+    <label id="con">App测试版</label>
+    <header class="aui-bar aui-bar-nav">
+    <a class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>返回
+    </a>
+    <div class="aui-title">App测试版</div>
+</header>
+	<div id="main"></div>
+	<footer class="aui-bar aui-bar-tab" id="footer">
+	    <div class="aui-bar-tab-item aui-active" tapmode="" onclick="randomSwitchBtn(this,'分类1',0)">
+	        <i class="aui-iconfont aui-icon-home"></i>
+	        <div class="aui-bar-tab-label">首页</div>
+	    </div>
+	    <div class="aui-bar-tab-item" tapmode="" onclick="randomSwitchBtn(this,'分类2',1)">
+	        <i class="aui-iconfont aui-icon-star"></i>
+	        <div class="aui-bar-tab-label">热门</div>
+	    </div>
+	    <div class="aui-bar-tab-item" tapmode="" onclick="randomSwitchBtn(this,'分类3',2)">
+	        <div class="aui-badge">99</div>
+	        <i class="aui-iconfont aui-icon-cart"></i>
+	        <div class="aui-bar-tab-label">购物车</div>
+	    </div>
+	    <div class="aui-bar-tab-item" tapmode="" onclick="randomSwitchBtn(this,'分类4',3)">
+	        <div class="aui-dot"></div>
+	        <i class="aui-iconfont aui-icon-my"></i>
+	        <div class="aui-bar-tab-label">我的</div>
+	    </div>
+	</footer>
+	<div id='sys-info'></div>
+</body>
+<!-- <script type="text/javascript">
+    apiready = function(){
+		var ver = api.version;
+		var sType = api.systemType;
+		var sVer = api.systemVersion;
+		var id = api.deviceId;
+		var model = api.deviceModel;
+		var name = api.deviceName;
+		var cType = api.connectionType;
+		var winName = api.winName;
+		var winWidth = api.winWidth;
+		var winHeight = api.winHeight;
+		var frameName = api.frameName || '';
+		var frameWidth = api.frameWidth || '';
+		var frameHeight = api.frameHeight || '';
+
+		var str = '<ul>';
+		str += '<li>引擎版本信息: ' + ver + '</li>';
+		str += '<li>系统类型: ' + sType + '</li>';
+		str += '<li>系统版本: ' + sVer + '</li>';
+		str += '<li>设备标识: ' + id + '</li>';
+		str += '<li>设备型号: ' + model + '</li>';
+		str += '<li>设备名称: ' + name + '</li>';
+		str += '<li>网络状态: ' + cType + '</li>';
+		str += '<li>主窗口名字: ' + winName + '</li>';
+		str += '<li>主窗口宽度: ' + winWidth + '</li>';
+		str += '<li>主窗口高度: ' + winHeight + '</li>';
+		str += '<li>子窗口名字: ' + frameName + '</li>';
+		str += '<li>子窗口宽度: ' + frameWidth + '</li>';
+		str += '<li>子窗口高度: ' + frameHeight + '</li>';
+		str += '</ul>';
+
+		$api.byId('sys-info').innerHTML = str;
+
+    };
+</script> -->
+</html>
